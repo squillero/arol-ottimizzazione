@@ -1,6 +1,8 @@
-jupyter
-tqdm
-icecream
-numpy
 black
+icecream
+jupyter
 matplotlib
+numpy
+pandas
+seaborn
+tqdm
