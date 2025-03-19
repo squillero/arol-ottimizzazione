@@ -1,0 +1,32 @@
+# Copyright 2025 Giovanni Squillero
+# SPDX-License-Identifier: 0BSD
+
+[project]
+    name = "arol-opt"
+    version = "0.1.0"
+    description = "Optimization algorithms for AROL"
+    authors = [
+        { name = "Giovanni Squillero", email = "giovanni.squillero@polito.it" },
+    ]
+    license = { text = "0BSD" }
+    readme = "README.md"
+    requires-python = ">=3.12"
+    dependencies = [
+        "jupyter (>=1.1.1,<2.0.0)",
+        "tqdm (>=4.67.1,<5.0.0)",
+        "icecream (>=2.1.4,<3.0.0)",
+        "numpy (>=2.2.4,<3.0.0)",
+        "black (>=25.1.0,<26.0.0)",
+        "matplotlib (>=3.10.1,<4.0.0)",
+    ]
+
+[tool.poetry]
+    package-mode = false
+
+[tool.black]
+    include     = "\\.ipynb"
+    line-length = 120
+
+[build-system]
+    requires      = ["poetry-core>=2.0.0,<3.0.0"]
+    build-backend = "poetry.core.masonry.api"
