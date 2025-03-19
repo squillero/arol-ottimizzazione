@@ -1,0 +1,6 @@
+jupyter
+tqdm
+icecream
+numpy
+black
+matplotlib
